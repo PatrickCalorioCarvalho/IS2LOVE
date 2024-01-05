@@ -1,0 +1,71 @@
+* { padding: 0; margin: 0; }
+
+html, body, .gameBoard {
+    min-height: 100% !important;
+    height: 100%;
+}
+
+.gameBoard {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87CEEB,#E0F6FF) ;
+}
+.tituloJogo {
+    position: absolute;
+    top: 0;
+    width: 300px;
+    right: 0;
+}
+
+.obstaculo {
+    position: absolute;
+    bottom: 0;
+    width: 140px;
+    animation: animacaoMovimentoObstaculo 2.5s infinite linear;
+}
+
+.boot {
+    position: absolute;
+    bottom: 0;
+    width: 250px;
+    right: 0;
+}
+
+.jogador {
+    position: absolute;
+    bottom: 0%;
+    width: 250px;
+}
+
+.pular{
+    animation: animacaoPular 500ms ease-out;
+}
+
+@keyframes animacaoMovimentoObstaculo {
+    from{
+        right: -140px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes animacaoPular{
+    0% {
+        bottom: 0;
+    }
+    40% {
+        bottom: 200px;
+    }
+    50% {
+        bottom: 200px;
+    }
+    60% {
+        bottom: 200px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
