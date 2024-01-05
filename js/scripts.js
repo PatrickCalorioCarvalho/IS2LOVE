@@ -77,7 +77,8 @@ const loop = setInterval(() => {
     if(bootPossicao <= 120)
     {
         clearInterval(loop);
-        alert('Você realmente é digna de ser dona do fofo... espere a recompensa chegar, quando mesmo esperar.')
+        alert('Você realmente é digna de ser dona do fofo... espere a recompensa chegar, quando mesmo esperar.');
+        location.reload();
     }
 
 
