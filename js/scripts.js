@@ -8,11 +8,14 @@ function primeiraPergunta()
             var respotaencode = "semresposta"
           }
     }while(respotaencode != "Rk9GTw==")
+
+    alert("É realmente você a escolhida, está preparada para conquistar algo nunca conquistado antes?");
+    alert("Então, você está preparando para pegar o Fofo só para você!  Pegue o fofo.");
 }
 primeiraPergunta()
 function gameOver()
 {
-    alert("ta vendo so achou que era facil comquistar o fofo aqui ne !!! ");
+    alert("Está vendo, você achou que era fácil conquistar o fofo aqui, né?");
     location.reload();
 }
 
@@ -74,7 +77,7 @@ const loop = setInterval(() => {
     if(bootPossicao <= 120)
     {
         clearInterval(loop);
-        alert('parabems')
+        alert('Você realmente é digna de ser dona do fofo... espere a recompensa chegar, quando mesmo esperar.')
     }
 
 
