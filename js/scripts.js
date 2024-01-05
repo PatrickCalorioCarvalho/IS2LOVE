@@ -9,7 +9,7 @@ function primeiraPergunta()
           }
     }while(respotaencode != "Rk9GTw==")
 }
-//primeiraPergunta()
+primeiraPergunta()
 function gameOver()
 {
     alert("ta vendo so achou que era facil comquistar o fofo aqui ne !!! ");
@@ -69,6 +69,12 @@ const loop = setInterval(() => {
         },500);
 
         
+    }
+
+    if(bootPossicao <= 120)
+    {
+        clearInterval(loop);
+        alert('parabems')
     }
 
 
